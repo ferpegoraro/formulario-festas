@@ -1,1 +1,29 @@
 @import url("fields/input.css");
+
+
+fieldset{
+    border: none;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+.calendar{
+    content: url(../assets/icons/calendar.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+legend{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+    font: var(--text-lg);
+    color: var(--text-heading);
+}
+
+label{
+    display: block;
+    margin-bottom: .75rem;
+}

@@ -21,18 +21,6 @@ main{
         margin-inline: auto;
     }
 
-    .about{
-        align-items: center;
-        gap: .75rem;
-        margin-bottom: 1.5rem;
-
-        .calender{
-            content: url(../assets/icons/calendar.svg);
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    
-    }
 
     h2{
         font: var(--text-xl);
