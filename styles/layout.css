@@ -13,9 +13,37 @@ main{
     border-radius: .75rem;
     overflow-y: auto;
     margin-right: 1.25rem;
-
-    padding-inline: 8.125rem;
+    height: 100vh;
     padding-block: 5rem;
+
+    .main-container{
+        max-width: 35rem;
+        margin-inline: auto;
+    }
+
+    .about{
+        align-items: center;
+        gap: .75rem;
+        margin-bottom: 1.5rem;
+
+        .calender{
+            content: url(../assets/icons/calendar.svg);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    
+    }
+
+    h2{
+        font: var(--text-xl);
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+    }
+
+    p{
+        font: var(--text-md);
+        color: var(--text-heading);
+    }
 }
 
 aside{
@@ -26,6 +54,11 @@ aside{
     border-radius: .75rem;
     padding: 2rem;
 
+    .aside-container{
+        max-width: 21rem;
+        margin-inline: auto;
+    }
+
     img{
         width: 2.875rem;
         height: 3rem;
@@ -34,7 +67,7 @@ aside{
     h1{
         margin-block: 1rem 1rem;
         font: var(--text-x2);
-        color: var(--danger);
+        color: #FF598B;
     }
 
     
