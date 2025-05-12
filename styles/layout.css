@@ -11,12 +11,31 @@
 main{
     background-color: var(--shape-body);
     border-radius: .75rem;
+    overflow-y: auto;
+    margin-right: 1.25rem;
+
+    padding-inline: 8.125rem;
+    padding-block: 5rem;
 }
 
 aside{
     background-image: url(../assets/Background.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 5rem;
     border-radius: .75rem;
+    padding: 2rem;
+
+    img{
+        width: 2.875rem;
+        height: 3rem;
+    }
+
+    h1{
+        margin-block: 1rem 1rem;
+        font: var(--text-x2);
+        color: var(--danger);
+    }
+
+    
 }
