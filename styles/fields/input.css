@@ -6,6 +6,5 @@ input, textarea{
     border: 1px solid var(--input-stroke);
     border-radius: .5rem;
     color: var(--text-body);
-    
-
 }
+

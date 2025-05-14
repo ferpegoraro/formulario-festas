@@ -49,10 +49,10 @@ body{
     display: flex;
 }
     
-.flex-1{
-    flex: 1;
+.grid-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 1rem;      
 }
 
-.flex-2{
-    flex: 2;
-}
+

@@ -39,6 +39,42 @@
                             <label for="event-name">Título</label>
                             <input type="text" id="event-name" name="event-name" placeholder="Nome do seu evento">
                         </div>
+
+                        <div class="grid-columns">
+                            <div class="input-wrapper">
+                                <label for="event-date-start">Início</label>
+                                <input type="date" id="event-date-start" name="event-date-start">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-date-end">Fim</label>
+                                <input type="date" id="event-date-end" name="event-date-end">
+                            </div>
+                        </div>
+
+                        <div class="grid-columns">
+                            <div class="input-wrapper">
+                                <label for="event-type">Tipo</label>
+                                <div class="radio-wrapper grid-columns">
+                                    <div class="radio-inner">
+                                        <input type="radio" id="event-type-presencial" name="event-type" value="presencial">
+                                        <div class="radio-image-1"></div>
+                                        <label for="event-type-presencial">Presencial</label>
+                                    </div>
+
+                                    <div class="radio-inner">
+                                        <input type="radio" id="event-type-online" name="event-type" value="online">
+                                        <div class="radio-image-2"></div>                                        
+                                        <label for="event-type-online">Online</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="local">Local</label>
+                                <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                            </div>
+                        </div>
             
                     </fieldset>
                 </form>
