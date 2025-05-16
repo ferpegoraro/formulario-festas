@@ -1,58 +1,93 @@
 input[type="radio"] {
-    appearance: none;
     position: absolute;
+    appearance: none;
     opacity: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .radio-wrapper {
     position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 4px 0;
     border: 1px solid var(--input-stroke);
-    border-radius: .5rem;
-
-
-    label {
-        cursor: pointer;
-        
-    }
-    
+    background-color: var(--input-base);
+    padding: 0.2rem;
 }
 
 .radio-inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
-    padding: 0.5rem;
+    gap: 4px;
+    padding: 0.6rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    border-right: 1px solid #3a3a42;
+    
+}
+
+.radio-inner:last-child {
+    border-right: none;
+}
+
+.radio-inner:hover {
+    background-color: var(--shape-hover);
+    border-radius: 0.25rem
+}
+
+.radio-inner:has(input[type="radio"]:checked) {
+    background-color: var(--shape-hover);
+    border-radius: 0.25rem;
     
 }
 
 .radio-inner label {
-    text-align: center;
-    width: 100%;
+    cursor: pointer;
     margin: 0;
-
+    font: var(--text-md);
+    font-weight: 500;
+    color: var(--text-body);
+    margin-left: 0.25rem;
 }
 
-.radio-image-1, .radio-image-2 {
+.radio-image-1 {
     width: 1rem;
     height: 1rem;
+    background-image: url('../../assets/icons/presencial.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     
 }
 
-.radio-image-1 {
-    background-image: url(../../assets/icons/presencial.svg);
-}
-
 .radio-image-2 {
-    background-image: url(../../assets/icons/online.svg);
+    width: 1rem;
+    height: 1rem;
+    background-image: url('../../assets/icons/online.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.radio-inner:has(input[type="radio"]:checked) .radio-image-1 {
+    background-image: url('../../assets/icons/presencial-checked.svg');
+    
+}
+
+.radio-inner:has(input[type="radio"]:checked) .radio-image-2 {
+    background-image: url('../../assets/icons/online-checked.svg');
+    
 }
 
 
-input[type="radio"]:checked + label {
-    border-color: var(--primary-color, #6246EA);
-    background-color: rgba(98, 70, 234, 0.1);
-}
+
+

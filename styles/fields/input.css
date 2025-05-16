@@ -8,3 +8,18 @@ input, textarea{
     color: var(--text-body);
 }
 
+input:focus,
+textarea:focus{
+    border: 1px solid var(--brand-light);
+    outline: none;
+
+    font: var(--text-body);
+    color: var(--text-heading);
+}
+
+input[type="date"]{
+    &::-webkit-calendar-picker-indicator{
+        opacity: 0;
+    }
+}
+
