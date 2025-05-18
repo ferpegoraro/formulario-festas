@@ -1,4 +1,5 @@
 input, textarea{
+    appearance: none;
     width: 100%;
     padding-block: 0.8rem;
     padding-left: 1rem;
@@ -6,6 +7,12 @@ input, textarea{
     border: 1px solid var(--input-stroke);
     border-radius: .5rem;
     color: var(--text-body);
+
+}
+
+/* Remove os tracinhos de redimensionamento do textarea */
+textarea {
+    resize: none;
 }
 
 input:focus,
@@ -20,6 +27,40 @@ textarea:focus{
 input[type="date"]{
     &::-webkit-calendar-picker-indicator{
         opacity: 0;
+    }
+}
+
+
+
+/* Estilos para validação de formulário e mensagens de erro */
+input, textarea{
+    /* Borda vermelha quando o campo é inválido */
+    &:invalid{
+        border-color: var(--danger);
+    }
+    
+    /* Mostra a mensagem de erro quando o campo é obrigatório */
+    &:required + .error{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        color: var(--danger);
+        font-size: 0.875rem;
+    }
+
+    /* Esconde a mensagem de erro quando o usuário começa a digitar ou quando o campo é válido */
+    &:not(:placeholder-shown) + .error,
+    &:valid + .error {
+        display: none;
+    }
+}
+
+/* Estilo para o texto da mensagem de erro */
+.error{
+    span{
+        font: var(--text-xs);
+        color: var(--danger);
     }
 }
 

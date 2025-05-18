@@ -15,6 +15,12 @@ fieldset{
     height: 1.5rem;
 }
 
+.pincel{
+    content: url(../assets/icons/pincel.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 legend{
     display: flex;
     align-items: center;
@@ -28,3 +34,13 @@ label{
     display: block;
     margin-bottom: .75rem;
 }
+
+.error {
+    display: none;
+}
+
+fieldset + fieldset{
+    margin-top: 3rem;
+}
+    
+

@@ -37,7 +37,11 @@
 
                         <div class="input-wrapper">
                             <label for="event-name">Título</label>
-                            <input type="text" id="event-name" name="event-name" placeholder="Nome do seu evento">
+                            <input type="text" id="event-name" name="event-name" placeholder="Nome do seu evento" required>
+                            <div class="error">
+                                <img src="assets/icons/error.svg" alt="código de erro">
+                                <span>Error message</span>
+                            </div>
                         </div>
 
                         <div class="grid-columns gap-1rem">
@@ -72,10 +76,79 @@
 
                             <div class="input-wrapper">
                                 <label for="local">Local</label>
-                                <input type="text" id="local" name="local" placeholder="Link ou endereço">
+                                <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
+                                <div class="error">
+                                    <img src="assets/icons/error.svg" alt="código de erro">
+                                    <span>Error message</span>
+                                </div>
                             </div>
                         </div>
-            
+
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="20" rows="7" placeholder="Escreva detalhes do seu evento" required ></textarea>
+                            <div class="error">
+                                <img src="assets/icons/error.svg" alt="código de erro">
+                                <span>Error message</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="personalize-event">
+                        <legend>
+                            <div class="pincel"></div>
+                            Personalização
+                        </legend>
+
+                        <div class="input-wrapper ">
+                            <label for="color">Cor principal</label>
+                            <!-- seçao cores -->
+                            <div class="radio-wrapper flex">
+                                <div class="radio-inner">
+                                    <input type="radio" id="blue" name="color" value="blue">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="navy" name="color" value="navy">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="purple" name="color" value="purple">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="furshia" name="color" value="furshia">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="pink" name="color" value="pink">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="danger" name="color" value="danger">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="orange" name="color" value="orange">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="yellow" name="color" value="yellow">
+                                </div>
+                                
+                                <div class="radio-inner">
+                                    <input type="radio" id="lime" name="color" value="lime">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="green" name="color" value="green">
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input type="radio" id="cyan" name="color" value="cyan">
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
