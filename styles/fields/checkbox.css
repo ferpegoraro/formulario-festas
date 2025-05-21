@@ -1,0 +1,50 @@
+.input-group label{
+    margin-bottom: 1rem;
+}
+
+.switch {
+    display: inline-flex;
+    position: relative;
+  
+    & input {
+      appearance: none;
+      width: 4rem;
+      height: 2rem;
+      border-radius: 999px;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      transition: background-color 0.3s ease;
+    }
+    
+    & input:checked {
+      background-color: var(--brand-light);
+    }
+
+    /* Estilo da bolinha do switch */
+    & .slider-round{
+        content: "";
+        position: absolute;
+        left: 0.25rem; /* Espaçamento de 0.25rem à esquerda */
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 999px;
+        background-color: var(--input-stroke);
+        top: 50%; /* Posiciona o topo da bolinha na metade vertical do container */
+        /* translateY(-50%) move a bolinha para cima pela metade de sua própria altura,
+           centralizando-a perfeitamente no eixo vertical */
+        transform: translateY(-50%);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Estilo da bolinha quando o switch está ativado (checked) */
+    & input:checked + .slider-round{
+        background-color: white;
+        transform: translateX(2rem) translateY(-50%);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        /* translateX(2rem) move a bolinha 2rem para a direita quando ativada
+           Cálculo: 4rem (largura total) - 1.5rem (largura da bolinha) - 0.25rem (espaço à esquerda) - 0.25rem (espaço à direita) = 2rem
+           translateY(-50%) mantém a centralização vertical */
+    }
+
+    
+}
