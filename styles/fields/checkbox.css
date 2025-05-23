@@ -1,6 +1,7 @@
 .input-group label{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
+
 
 .switch {
     display: inline-flex;
@@ -46,5 +47,18 @@
            translateY(-50%) mantém a centralização vertical */
     }
 
+    & label[for="style"] {
+      position: absolute;
+      left: 5rem;
+      top: 0.5rem;
+    }
     
+    & label[for="style"]::before {
+      content: "Escuro";
+    }
+
+    & input:checked ~ label[for="style"]:before {
+        content: "Claro";
+    }
 }
+

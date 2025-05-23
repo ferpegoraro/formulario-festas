@@ -58,5 +58,11 @@ body{
 .gap-1rem{
     gap: 1rem;
 }
+.grid-columns-2{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+    
 
 
