@@ -254,16 +254,83 @@
 
                             
                         </div>
+                    </fieldset>
+
+                    <fieldset class="contact"> 
+                        <legend>
+                            <div class="person"></div>
+                            Dados para contato
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Nome do seu evento" required>
+                            <div class="error">
+                                <img src="assets/icons/error.svg" alt="código de erro">
+                                <span>Error message</span>
+                            </div>
+                        </div>
+
+                        <div class="grid-columns gap-1rem">
+                            <div class="input-wrapper">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <div class="error">
+                                    <img src="assets/icons/error.svg" alt="código de erro">
+                                    <span>Error message</span>
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
+                                <div class="error">
+                                    <img src="assets/icons/error.svg" alt="código de erro">
+                                    <span>Error message</span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="line"></div>
+
+                    <fieldset class="terms">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-inner">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+                            </div>
+
+                            <div class="checkbox-inner">
+                                <input type="checkbox" id="update-email" name="update-email">
+                                <label for="update-email">Quero receber atualizações por email</label>
+                            </div>
+
+                            <div class="checkbox-inner">
+                                <input type="checkbox" id="update-sms" name="update-sms">
+                                <label for="update-sms">Quero receber atualizações por SMS</label>
+                            </div>
 
                         </div>
-                    </div>
-
                     </fieldset>
+
+
+                    <footer>
+                        <div class="input-wrapper">
+                            <div class="input-inner">
+                                <label>
+                                    <img src="assets/icons/ticket.svg" alt="">
+                                    Gerar convite
+                                </label>
+                                <input type="submit" id="submit" name="submit">
+                            </div>
+                        </div>
+                    </footer>
+                    
                 </form>
             </div>
         </main>
-
-        
     </div>
 
 </body>

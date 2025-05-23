@@ -63,6 +63,19 @@ body{
     grid-template-columns: 0.5fr 1fr;
 }
 
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--input-stroke);
+    margin-top: 2rem;
+}
+
+
+
+.terms{
+    margin-top: 2rem;
+}
+
     
 
 

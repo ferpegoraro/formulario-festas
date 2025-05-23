@@ -21,6 +21,12 @@ fieldset{
     height: 1.5rem;
 }
 
+.person{
+    content: url(../assets/icons/contact.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 legend{
     display: flex;
     align-items: center;
